@@ -1,3 +1,351 @@
-%header
-	%a{href: "#"} HUJ 
-%div
+%html
+	%head{lang:"en"}
+		%meta{charset:"UTF-8"}
+		%link{href:"css/style.css", rel: "stylesheet"}/
+		%link{:href => "css/jquery-ui.css", :rel => "stylesheet"}/
+		%link{:href => "css/accordion.css", :rel => "stylesheet"}/
+		%link{:href => "css/jquery.nstSlider.css", :rel => "stylesheet"}/
+		%link{href:"img/favicon1.ico", rel:"icon"}/
+		%title MMLodging
+		%body
+			%header
+				.headerin
+					.logo
+						%a{href:"#"}
+							%img{src:"img/logo.png"}
+					.top-btn	
+						.nav
+							%ul
+								%li
+									%a{href:"#"} Home
+								%li
+									%a{href:"#"} Hostels
+								%li	
+									%a{href:"#"} Guides
+								%li	
+									%a{href:"#"} Contact Us
+						.signin
+							%a{href:"#"} Sign In
+			.wrapper				
+				.aside
+					.asection1
+						%h3 Search Hostels
+						%input#as1{placeholder:"Hostel Name"}/
+						%select#cat-id
+							%option Select
+							%option Bla bla bla
+							%option bla bla bla
+						.input	
+							%input#datepicker{placeholder:"Check in"}/
+							%input#datepicker1{placeholder:"Check out"}/
+						%a.search-a{href:"#"} SEARCH
+					.asection2
+						%h3 Filter Results
+						.ui.styled.accordion
+							.title
+								%i.dropdown.icon 
+								Price (USD)
+							.content
+								.nstSlider{"data-cur_max" => "80", "data-cur_min" => "20", "data-range_max" => "100", "data-range_min" => "0"}
+									.bar
+									.leftGrip
+									.rightGrip
+								%p.p-range-slide Range:
+								%p.p-dollar $ 
+								.leftLabel
+								%p.p-range-to to 
+								%p.p-dollar $ 
+								.rightLabel
+							.title
+								%i.dropdown.icon 
+								Rating
+							.content 
+								.nstSlider{"data-cur_max" => "80", "data-cur_min" => "20", "data-range_max" => "200", "data-range_min" => "0"}
+									.bar
+									.leftGrip
+									.rightGrip
+								%p.p-range-slide Range:
+								.leftLabel
+								%p.p-range-to to  
+								.rightLabel
+							.title
+								%i.dropdown.icon 
+								Property Type 
+							.content
+								%div.check-text						
+									%input#all-property{:name => "answer", :type => "checkbox", :value => "yes"}/
+									%label{:for => "all-property"} All property types
+								%div.check-text						
+									%input#hostel{:name => "answer", :type => "checkbox", :value => "yes"}/
+									%label{:for => "hostels"} Hostels
+								%div.check-text					
+									%input#bed{:name => "answer", :type => "checkbox", :value => "yes"}/
+									%label{:for => "bed"} Bed and Breakfasts
+								%div.check-text						
+									%input#hotels{:name => "answer", :type => "checkbox", :value => "yes"}/
+									%label{:for => "hotels"} Hotels
+							.title
+								%i.dropdown.icon 
+								Room type
+							.content 
+								%div.check-text						
+									%input#ensuite{:name => "answer", :type => "checkbox", :value => "yes"}/
+									%label{:for => "ensuite"} Ensuite Room
+								%h2.room-type Private
+								%div.check-text						
+									%input#single{:name => "answer", :type => "checkbox", :value => "yes"}/
+									%label{:for => "single"} Singe Room
+								%div.check-text						
+									%input#twin{:name => "answer", :type => "checkbox", :value => "yes"}/
+									%label{:for => "twin"} Twin Room
+								%div.check-text						
+									%input#double{:name => "answer", :type => "checkbox", :value => "yes"}/
+									%label{:for => "double"} Double Room
+								%div.check-text						
+									%input#tripple{:name => "answer", :type => "checkbox", :value => "yes"}/
+									%label{:for => "tripple"} Tripple Room
+								%div.check-text						
+									%input#family{:name => "answer", :type => "checkbox", :value => "yes"}/
+									%label{:for => "family"} Family Room
+								%h2.room-type Dorm
+								%div.check-text						
+									%input#mixed{:name => "family", :type => "checkbox", :value => "yes"}/
+									%label{:for => "mixed"} Mixed Dorm
+								%div.check-text						
+									%input#male{:name => "family", :type => "checkbox", :value => "yes"}/
+									%label{:for => "male"} Male Dorm
+								%div.check-text						
+									%input#female{:name => "family", :type => "checkbox", :value => "yes"}/
+									%label{:for => "female"} Female Dorm
+							.title
+								%i.dropdown.icon 
+								Facilities
+							.content 
+								%div.check-text						
+									%input#breakfest{:name => "answer", :type => "checkbox", :value => "yes"}/
+									%label{:for => "breakfest"} Breakfast included
+								%div.check-text						
+									%input#internet-access{:name => "answer", :type => "checkbox", :value => "yes"}/
+									%label{:for => "internet-access"} Internet access
+								%div.check-text					
+									%input#luggage-storage{:name => "answer", :type => "checkbox", :value => "yes"}/
+									%label{:for => "luggage-storage"} Luggage storage
+								%div.check-text						
+									%input#hour-check{:name => "answer", :type => "checkbox", :value => "yes"}/
+									%label{:for => "hour-check"} Hour check in
+								%div.check-text						
+									%input#restaurant{:name => "answer", :type => "checkbox", :value => "yes"}/
+									%label{:for => "restaurant"} Restaurant
+								%div.check-text						
+									%input#bar{:name => "answer", :type => "checkbox", :value => "yes"}/
+									%label{:for => "bar"} Bar
+								%div.check-text						
+									%input#air-cond{:name => "answer", :type => "checkbox", :value => "yes"}/
+									%label{:for => "air-cond"} Air conditioning
+								%div.check-text						
+									%input#common-room{:name => "answer", :type => "checkbox", :value => "yes"}/
+									%label{:for => "common-room"} Common room
+								%div.check-text						
+									%input#travel-desk{:name => "answer", :type => "checkbox", :value => "yes"}/
+									%label{:for => "travel-desk"} Travel desk
+								%div.check-text						
+									%input#Wheelchair-friendly{:name => "answer", :type => "checkbox", :value => "yes"}/
+									%label{:for => "Wheelchair-friendly"} Wheelchair friendly
+							.title
+								%i.dropdown.icon 
+								Payment Type
+							.content 
+								%div.check-text						
+									%input#All-payments{:name => "answer", :type => "checkbox", :value => "yes"}/
+									%label{:for => "All-payments"} All payments type
+								%div.check-text						
+									%input#Credit-card{:name => "answer", :type => "checkbox", :value => "yes"}/
+									%label{:for => "Credit-card"} Credit card
+								%div.check-text						
+									%input#Debit-card{:name => "answer", :type => "checkbox", :value => "yes"}/
+									%label{:for => "Debit-card"} Debit card
+								%div.check-text						
+									%input#Paypal{:name => "answer", :type => "checkbox", :value => "yes"}/
+									%label{:for => "Paypal"} Paypal
+						%a.search-a{href:"#"} SEARCH
+						%a.clear-all.btn{href:"#"} CLEAR ALL
+					.clear-both
+				.content-right
+					.c-top
+						.c-top-1
+							.c-top-1-1
+								%a{href:"#"} SHOW MAP
+						.c-top-2
+							%p.sort Sort by:
+							%a.blue-btn{href:"#"} Rating 
+							%a.blue-btn{href:"#"} Price
+					.c-mid
+						.room
+							.room-photo.photo1
+							.room-info
+								.r-text
+									%a.hotel-name{href:"#"} Mandalay City Hotel
+									%p We welcome you to our Mandalay City Hotel hotel located at the heart of the city! Mandalay City Hotel is often called... 
+									%a{href:"#"} More info
+								.r-info
+									.r-rating
+										%h3 Rating 20%
+									.r-info-in	
+										.r-price
+											%p Price from 
+											%span $100
+										.ui.styled.accordion
+											.title
+												%i.dropdown.icon 
+												SHOW ROOM TYPES
+											.content
+												Ensuite Room
+										%a.btn.book-now{href:"#"} BOOK NOW		 
+						.room
+							.room-photo.photo2
+							.room-info
+								.r-text
+									%a.hotel-name{href:"#"} Bagan Hotel River View
+									%p Bagan Hotel River View features a total of 107 rooms in 6 categories: Deluxe, Junior Suite, River View Suite, Bagan R... 
+									%a{href:"#"} More info
+								.r-info
+									.r-rating
+										%h3 Rating 100%
+									.r-info-in	
+										.r-price
+											%p Price from 
+											%span $5
+										.ui.styled.accordion
+											.title
+												%i.dropdown.icon 
+												SHOW ROOM TYPES
+											.content
+												Ensuite Room
+												Single Room 
+												Twin Room 
+												Triple Room 
+												Family Room 
+										%a.btn.book-now{href:"#"} BOOK NOW		 
+						.room
+							.room-photo.photo3
+							.room-info
+								.r-text
+									%a.hotel-name{href:"#"} Bagan Umbra Hotel
+									%p Bagan Umbra Hotel (aka Golden Express Hotel) is located within 2 kilometres from the ancient capital of Myanamar: Old...  
+									%a{href:"#"} More info
+								.r-info
+									.r-rating
+										%h3 Rating 100%
+									.r-info-in	
+										.r-price
+											%p Price from 
+											%span $100
+										.ui.styled.accordion
+											.title
+												%i.dropdown.icon 
+												SHOW ROOM TYPES
+											.content
+												Ensuite Room
+												Single Room 
+												Family Room 
+										%a.btn.book-now{href:"#"} BOOK NOW		 
+						.room
+							.room-photo.photo4
+							.room-info
+								.r-text
+									%a.hotel-name{href:"#"} Sedona Hotel Mandalay
+									%p Long regarded as the cultural and spiritual heart of Myanmar, Mandalay is the second largest city in Myanmar. Positio... . 
+									%a{href:"#"} More info
+								.r-info
+									.r-rating
+										%h3 Rating 59%
+									.r-info-in	
+										.r-price
+											%p Price from 
+											%span $15
+										.ui.styled.accordion
+											.title
+												%i.dropdown.icon 
+												SHOW ROOM TYPES
+											.content
+												Ensuite Room
+												Single Room 
+												Twin Room 
+												Double Room 
+												Triple Room 
+												Family Room 
+										%a.btn.book-now{href:"#"} BOOK NOW		 
+						.room
+							.room-photo.photo5
+							.room-info
+								.r-text
+									%a.hotel-name{href:"#"} Mandalay Hill Resort Hotel
+									%p Mandalay Hill Resort lies at the foot of Mandalay Hill with a panoramic view of a myriad of pagodas and faces the dis...  
+									%a{href:"#"} More info
+								.r-info
+									.r-rating
+										%h3 Rating 68%
+									.r-info-in	
+										.r-price
+											%p Price from 
+											%span $150
+										.ui.styled.accordion
+											.title
+												%i.dropdown.icon 
+												SHOW ROOM TYPES
+											.content
+												Ensuite Room
+										%a.btn.book-now{href:"#"} BOOK NOW		 
+					.c-bot
+						.bot-navi
+							%a{href:"#"} 1
+							%a{href:"#"} 2
+							%a{href:"#"} Next ›
+							%a{href:"#"} Last »
+			.footer
+				.footer-in
+					.footer-in-left
+						.wr1
+							%a{href:"#"} FAQ
+							%a{href:"#"} About Us
+						.wr2
+							%a{href:"#"} Security & Privacy
+							%a{href:"#"} Terms & Conditions
+							%a.contact{href:"#"} Contact Us
+					.footer-in-right
+						%a.facebook{href:"#"} 
+						%a.twit{href:"#"} 
+						%a.googel{href:"#"} 
+			%script{:src => "http://code.jquery.com/jquery-1.10.2.js"}
+			%script{:src => "http://code.jquery.com/ui/1.11.2/jquery-ui.js"}	
+			%script{src:"js/accordion.js"}
+			%script{src:"js/jquery.nstSlider.js"}
+			%script{src:"js/prettyCheckable.js"}
+			:javascript
+				$('.ui.accordion')
+					.accordion()
+				;
+			:javascript
+				$(function() {
+					$("#datepicker").datepicker();
+					});	
+			:javascript
+				$(function() {
+					$("#datepicker1").datepicker();
+					});
+			:javascript
+				$(".nstSlider").nstSlider({    
+					"left_grip_selector": ".leftGrip",
+					"right_grip_selector": ".rightGrip",
+					"value_bar_selector": ".bar",
+					"value_changed_callback": function(cause, leftValue, rightValue) {
+						$(this).parent().find('.leftLabel').text(leftValue);
+						$(this).parent().find('.rightLabel').text(rightValue);
+					}
+				});
+			
+		
+
+
+
+

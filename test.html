@@ -1,4 +1,476 @@
-<header>
-  <a href='#'>HUJ</a>
-</header>
-<div></div>
+<html>
+  <head lang='en'>
+    <meta charset='UTF-8'>
+    <link href='css/style.css' rel='stylesheet'>
+    <link href='css/jquery-ui.css' rel='stylesheet'>
+    <link href='css/accordion.css' rel='stylesheet'>
+    <link href='css/jquery.nstSlider.css' rel='stylesheet'>
+    <link href='img/favicon1.ico' rel='icon'>
+    <title>MMLodging</title>
+    <body>
+      <header>
+        <div class='headerin'>
+          <div class='logo'>
+            <a href='#'>
+              <img src='img/logo.png'>
+            </a>
+          </div>
+          <div class='top-btn'>
+            <div class='nav'>
+              <ul>
+                <li>
+                  <a href='#'>Home</a>
+                </li>
+                <li>
+                  <a href='#'>Hostels</a>
+                </li>
+                <li>
+                  <a href='#'>Guides</a>
+                </li>
+                <li>
+                  <a href='#'>Contact Us</a>
+                </li>
+              </ul>
+            </div>
+            <div class='signin'>
+              <a href='#'>Sign In</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class='wrapper'>
+        <div class='aside'>
+          <div class='asection1'>
+            <h3>Search Hostels</h3>
+            <input id='as1' placeholder='Hostel Name'>
+            <select id='cat-id'>
+              <option>Select</option>
+              <option>Bla bla bla</option>
+              <option>bla bla bla</option>
+            </select>
+            <div class='input'>
+              <input id='datepicker' placeholder='Check in'>
+              <input id='datepicker1' placeholder='Check out'>
+            </div>
+            <a class='search-a' href='#'>SEARCH</a>
+          </div>
+          <div class='asection2'>
+            <h3>Filter Results</h3>
+            <div class='ui styled accordion'>
+              <div class='title'>
+                <i class='dropdown icon'></i>
+                Price (USD)
+              </div>
+              <div class='content'>
+                <div class='nstSlider' data-cur_max='80' data-cur_min='20' data-range_max='100' data-range_min='0'>
+                  <div class='bar'></div>
+                  <div class='leftGrip'></div>
+                  <div class='rightGrip'></div>
+                </div>
+                <p class='p-range-slide'>Range:</p>
+                <p class='p-dollar'>$</p>
+                <div class='leftLabel'></div>
+                <p class='p-range-to'>to</p>
+                <p class='p-dollar'>$</p>
+                <div class='rightLabel'></div>
+              </div>
+              <div class='title'>
+                <i class='dropdown icon'></i>
+                Rating
+              </div>
+              <div class='content'>
+                <div class='nstSlider' data-cur_max='80' data-cur_min='20' data-range_max='200' data-range_min='0'>
+                  <div class='bar'></div>
+                  <div class='leftGrip'></div>
+                  <div class='rightGrip'></div>
+                </div>
+                <p class='p-range-slide'>Range:</p>
+                <div class='leftLabel'></div>
+                <p class='p-range-to'>to</p>
+                <div class='rightLabel'></div>
+              </div>
+              <div class='title'>
+                <i class='dropdown icon'></i>
+                Property Type
+              </div>
+              <div class='content'>
+                <div class='check-text'>
+                  <input id='all-property' name='answer' type='checkbox' value='yes'>
+                  <label for='all-property'>All property types</label>
+                </div>
+                <div class='check-text'>
+                  <input id='hostel' name='answer' type='checkbox' value='yes'>
+                  <label for='hostels'>Hostels</label>
+                </div>
+                <div class='check-text'>
+                  <input id='bed' name='answer' type='checkbox' value='yes'>
+                  <label for='bed'>Bed and Breakfasts</label>
+                </div>
+                <div class='check-text'>
+                  <input id='hotels' name='answer' type='checkbox' value='yes'>
+                  <label for='hotels'>Hotels</label>
+                </div>
+              </div>
+              <div class='title'>
+                <i class='dropdown icon'></i>
+                Room type
+              </div>
+              <div class='content'>
+                <div class='check-text'>
+                  <input id='ensuite' name='answer' type='checkbox' value='yes'>
+                  <label for='ensuite'>Ensuite Room</label>
+                </div>
+                <h2 class='room-type'>Private</h2>
+                <div class='check-text'>
+                  <input id='single' name='answer' type='checkbox' value='yes'>
+                  <label for='single'>Singe Room</label>
+                </div>
+                <div class='check-text'>
+                  <input id='twin' name='answer' type='checkbox' value='yes'>
+                  <label for='twin'>Twin Room</label>
+                </div>
+                <div class='check-text'>
+                  <input id='double' name='answer' type='checkbox' value='yes'>
+                  <label for='double'>Double Room</label>
+                </div>
+                <div class='check-text'>
+                  <input id='tripple' name='answer' type='checkbox' value='yes'>
+                  <label for='tripple'>Tripple Room</label>
+                </div>
+                <div class='check-text'>
+                  <input id='family' name='answer' type='checkbox' value='yes'>
+                  <label for='family'>Family Room</label>
+                </div>
+                <h2 class='room-type'>Dorm</h2>
+                <div class='check-text'>
+                  <input id='mixed' name='family' type='checkbox' value='yes'>
+                  <label for='mixed'>Mixed Dorm</label>
+                </div>
+                <div class='check-text'>
+                  <input id='male' name='family' type='checkbox' value='yes'>
+                  <label for='male'>Male Dorm</label>
+                </div>
+                <div class='check-text'>
+                  <input id='female' name='family' type='checkbox' value='yes'>
+                  <label for='female'>Female Dorm</label>
+                </div>
+              </div>
+              <div class='title'>
+                <i class='dropdown icon'></i>
+                Facilities
+              </div>
+              <div class='content'>
+                <div class='check-text'>
+                  <input id='breakfest' name='answer' type='checkbox' value='yes'>
+                  <label for='breakfest'>Breakfast included</label>
+                </div>
+                <div class='check-text'>
+                  <input id='internet-access' name='answer' type='checkbox' value='yes'>
+                  <label for='internet-access'>Internet access</label>
+                </div>
+                <div class='check-text'>
+                  <input id='luggage-storage' name='answer' type='checkbox' value='yes'>
+                  <label for='luggage-storage'>Luggage storage</label>
+                </div>
+                <div class='check-text'>
+                  <input id='hour-check' name='answer' type='checkbox' value='yes'>
+                  <label for='hour-check'>Hour check in</label>
+                </div>
+                <div class='check-text'>
+                  <input id='restaurant' name='answer' type='checkbox' value='yes'>
+                  <label for='restaurant'>Restaurant</label>
+                </div>
+                <div class='check-text'>
+                  <input id='bar' name='answer' type='checkbox' value='yes'>
+                  <label for='bar'>Bar</label>
+                </div>
+                <div class='check-text'>
+                  <input id='air-cond' name='answer' type='checkbox' value='yes'>
+                  <label for='air-cond'>Air conditioning</label>
+                </div>
+                <div class='check-text'>
+                  <input id='common-room' name='answer' type='checkbox' value='yes'>
+                  <label for='common-room'>Common room</label>
+                </div>
+                <div class='check-text'>
+                  <input id='travel-desk' name='answer' type='checkbox' value='yes'>
+                  <label for='travel-desk'>Travel desk</label>
+                </div>
+                <div class='check-text'>
+                  <input id='Wheelchair-friendly' name='answer' type='checkbox' value='yes'>
+                  <label for='Wheelchair-friendly'>Wheelchair friendly</label>
+                </div>
+              </div>
+              <div class='title'>
+                <i class='dropdown icon'></i>
+                Payment Type
+              </div>
+              <div class='content'>
+                <div class='check-text'>
+                  <input id='All-payments' name='answer' type='checkbox' value='yes'>
+                  <label for='All-payments'>All payments type</label>
+                </div>
+                <div class='check-text'>
+                  <input id='Credit-card' name='answer' type='checkbox' value='yes'>
+                  <label for='Credit-card'>Credit card</label>
+                </div>
+                <div class='check-text'>
+                  <input id='Debit-card' name='answer' type='checkbox' value='yes'>
+                  <label for='Debit-card'>Debit card</label>
+                </div>
+                <div class='check-text'>
+                  <input id='Paypal' name='answer' type='checkbox' value='yes'>
+                  <label for='Paypal'>Paypal</label>
+                </div>
+              </div>
+            </div>
+            <a class='search-a' href='#'>SEARCH</a>
+            <a class='clear-all btn' href='#'>CLEAR ALL</a>
+          </div>
+          <div class='clear-both'></div>
+        </div>
+        <div class='content-right'>
+          <div class='c-top'>
+            <div class='c-top-1'>
+              <div class='c-top-1-1'>
+                <a href='#'>SHOW MAP</a>
+              </div>
+            </div>
+            <div class='c-top-2'>
+              <p class='sort'>Sort by:</p>
+              <a class='blue-btn' href='#'>Rating</a>
+              <a class='blue-btn' href='#'>Price</a>
+            </div>
+          </div>
+          <div class='c-mid'>
+            <div class='room'>
+              <div class='room-photo photo1'></div>
+              <div class='room-info'>
+                <div class='r-text'>
+                  <a class='hotel-name' href='#'>Mandalay City Hotel</a>
+                  <p>We welcome you to our Mandalay City Hotel hotel located at the heart of the city! Mandalay City Hotel is often called...</p>
+                  <a href='#'>More info</a>
+                </div>
+                <div class='r-info'>
+                  <div class='r-rating'>
+                    <h3>Rating 20%</h3>
+                  </div>
+                  <div class='r-info-in'>
+                    <div class='r-price'>
+                      <p>Price from</p>
+                      <span>$100</span>
+                    </div>
+                    <div class='ui styled accordion'>
+                      <div class='title'>
+                        <i class='dropdown icon'></i>
+                        SHOW ROOM TYPES
+                      </div>
+                      <div class='content'>
+                        Ensuite Room
+                      </div>
+                    </div>
+                    <a class='btn book-now' href='#'>BOOK NOW</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class='room'>
+              <div class='room-photo photo2'></div>
+              <div class='room-info'>
+                <div class='r-text'>
+                  <a class='hotel-name' href='#'>Bagan Hotel River View</a>
+                  <p>Bagan Hotel River View features a total of 107 rooms in 6 categories: Deluxe, Junior Suite, River View Suite, Bagan R...</p>
+                  <a href='#'>More info</a>
+                </div>
+                <div class='r-info'>
+                  <div class='r-rating'>
+                    <h3>Rating 100%</h3>
+                  </div>
+                  <div class='r-info-in'>
+                    <div class='r-price'>
+                      <p>Price from</p>
+                      <span>$5</span>
+                    </div>
+                    <div class='ui styled accordion'>
+                      <div class='title'>
+                        <i class='dropdown icon'></i>
+                        SHOW ROOM TYPES
+                      </div>
+                      <div class='content'>
+                        Ensuite Room
+                        Single Room
+                        Twin Room
+                        Triple Room
+                        Family Room
+                      </div>
+                    </div>
+                    <a class='btn book-now' href='#'>BOOK NOW</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class='room'>
+              <div class='room-photo photo3'></div>
+              <div class='room-info'>
+                <div class='r-text'>
+                  <a class='hotel-name' href='#'>Bagan Umbra Hotel</a>
+                  <p>Bagan Umbra Hotel (aka Golden Express Hotel) is located within 2 kilometres from the ancient capital of Myanamar: Old...</p>
+                  <a href='#'>More info</a>
+                </div>
+                <div class='r-info'>
+                  <div class='r-rating'>
+                    <h3>Rating 100%</h3>
+                  </div>
+                  <div class='r-info-in'>
+                    <div class='r-price'>
+                      <p>Price from</p>
+                      <span>$100</span>
+                    </div>
+                    <div class='ui styled accordion'>
+                      <div class='title'>
+                        <i class='dropdown icon'></i>
+                        SHOW ROOM TYPES
+                      </div>
+                      <div class='content'>
+                        Ensuite Room
+                        Single Room
+                        Family Room
+                      </div>
+                    </div>
+                    <a class='btn book-now' href='#'>BOOK NOW</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class='room'>
+              <div class='room-photo photo4'></div>
+              <div class='room-info'>
+                <div class='r-text'>
+                  <a class='hotel-name' href='#'>Sedona Hotel Mandalay</a>
+                  <p>Long regarded as the cultural and spiritual heart of Myanmar, Mandalay is the second largest city in Myanmar. Positio... .</p>
+                  <a href='#'>More info</a>
+                </div>
+                <div class='r-info'>
+                  <div class='r-rating'>
+                    <h3>Rating 59%</h3>
+                  </div>
+                  <div class='r-info-in'>
+                    <div class='r-price'>
+                      <p>Price from</p>
+                      <span>$15</span>
+                    </div>
+                    <div class='ui styled accordion'>
+                      <div class='title'>
+                        <i class='dropdown icon'></i>
+                        SHOW ROOM TYPES
+                      </div>
+                      <div class='content'>
+                        Ensuite Room
+                        Single Room
+                        Twin Room
+                        Double Room
+                        Triple Room
+                        Family Room
+                      </div>
+                    </div>
+                    <a class='btn book-now' href='#'>BOOK NOW</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class='room'>
+              <div class='room-photo photo5'></div>
+              <div class='room-info'>
+                <div class='r-text'>
+                  <a class='hotel-name' href='#'>Mandalay Hill Resort Hotel</a>
+                  <p>Mandalay Hill Resort lies at the foot of Mandalay Hill with a panoramic view of a myriad of pagodas and faces the dis...</p>
+                  <a href='#'>More info</a>
+                </div>
+                <div class='r-info'>
+                  <div class='r-rating'>
+                    <h3>Rating 68%</h3>
+                  </div>
+                  <div class='r-info-in'>
+                    <div class='r-price'>
+                      <p>Price from</p>
+                      <span>$150</span>
+                    </div>
+                    <div class='ui styled accordion'>
+                      <div class='title'>
+                        <i class='dropdown icon'></i>
+                        SHOW ROOM TYPES
+                      </div>
+                      <div class='content'>
+                        Ensuite Room
+                      </div>
+                    </div>
+                    <a class='btn book-now' href='#'>BOOK NOW</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='c-bot'>
+            <div class='bot-navi'>
+              <a href='#'>1</a>
+              <a href='#'>2</a>
+              <a href='#'>Next ›</a>
+              <a href='#'>Last »</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='footer'>
+        <div class='footer-in'>
+          <div class='footer-in-left'>
+            <div class='wr1'>
+              <a href='#'>FAQ</a>
+              <a href='#'>About Us</a>
+            </div>
+            <div class='wr2'>
+              <a href='#'>Security & Privacy</a>
+              <a href='#'>Terms & Conditions</a>
+              <a class='contact' href='#'>Contact Us</a>
+            </div>
+          </div>
+          <div class='footer-in-right'>
+            <a class='facebook' href='#'></a>
+            <a class='twit' href='#'></a>
+            <a class='googel' href='#'></a>
+          </div>
+        </div>
+      </div>
+      <script src='http://code.jquery.com/jquery-1.10.2.js'></script>
+      <script src='http://code.jquery.com/ui/1.11.2/jquery-ui.js'></script>
+      <script src='js/accordion.js'></script>
+      <script src='js/jquery.nstSlider.js'></script>
+      <script src='js/prettyCheckable.js'></script>
+      <script>
+        $('.ui.accordion')
+        	.accordion()
+        ;
+      </script>
+      <script>
+        $(function() {
+        	$("#datepicker").datepicker();
+        	});
+      </script>
+      <script>
+        $(function() {
+        	$("#datepicker1").datepicker();
+        	});
+      </script>
+      <script>
+        $(".nstSlider").nstSlider({    
+        	"left_grip_selector": ".leftGrip",
+        	"right_grip_selector": ".rightGrip",
+        	"value_bar_selector": ".bar",
+        	"value_changed_callback": function(cause, leftValue, rightValue) {
+        		$(this).parent().find('.leftLabel').text(leftValue);
+        		$(this).parent().find('.rightLabel').text(rightValue);
+        	}
+        });
+      </script>
+    </body>
+  </head>
+</html>

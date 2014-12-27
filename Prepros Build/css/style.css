@@ -1,0 +1,122 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color:  rgba(32, 179, 255, 0.9);
+	height: 69px;
+}
+
+.headerin {
+	max-width: 1000px;
+	margin: auto;
+}
+
+.logo {
+    float: left;
+    padding-top: 2%;
+}
+
+.top-btn {
+	width: 56%;
+	float: right;
+	padding-top: 1.899%;
+}
+
+.top-btn a {
+	font-size: 18px;
+	padding: 0 20px;
+	color: white;
+    text-decoration: none;
+}
+
+.nav ul {
+    list-style: none;
+}
+
+
+.nav {
+    float: left;
+}
+
+.nav ul li {
+    display: inline-block;
+}
+
+.top-btn a:hover {
+    transition: 0.5s;
+    color: rgba(255,255,255,0.8);
+}
+
+.signin {
+	float: right;
+}
+
+.signin a {
+	background: url("../img/log.png") no-repeat;
+	background-position: 94% 47%;
+	padding-right: 28px;
+	padding-top: 23.5px;
+	padding-bottom: 29.5px;
+	background-color: #208dc5;
+}
+/* end of header */
+
+.wrapper {
+	max-width: 1000px;
+	margin: auto;
+}
+
+/*aside*/
+.aside {
+	float: left;
+	height: 90%;
+	margin-top: 45px;	
+}
+
+.asection1 {
+	width: 260px;
+	margin: auto;
+	height: 150px;
+	padding: 12px 0;
+	background-color: #ececec;
+	border-radius: 7px;
+	border: 1px solid #c8c8c8;
+}
+
+.aside h3 {
+	text-align: center;
+	color: #686868;
+}
+
+#as1 {
+	margin: 14px auto;
+	display: block;
+	border: 1px solid #cccccc;
+	border-radius: 7px;
+	width: 90%;
+	height: 35px;
+	padding: 10px;
+	outline: none;
+	font-size: 15px;
+}
+
+#cat-id {
+	width: 90%;
+	margin: 14px auto;
+	display: block;
+	height: 35px;
+	border-radius: 7px;
+	border: 1px solid #cccccc;
+	margin-top: 10px;
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	background: url("../img/arrow.png") no-repeat;
+	background-position: 97%;
+	background-color: white;
+	padding-left: 7px;
+	outline: none;
+	font-size: 15px;
+}
